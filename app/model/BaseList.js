@@ -17,6 +17,7 @@ class BaseList {
         this._list.push(todo);
     }
 
+
     //リストを空にするメソッド
     clearList() {
         this._list = [];
@@ -38,4 +39,11 @@ class BaseList {
             this._list.splice(position, 1);
         }
     }
+
+    addAll(newList) {
+        
+        this.clearList();
+        this._list = newList;
+      }
+    
 }

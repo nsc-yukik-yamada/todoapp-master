@@ -4,7 +4,6 @@ const ConnectionFactory = (function () {
 
   //   db名前
   const dbName = `todo.db`;
-
   const dbVersion = `1`;
   const dbDisplayName = `tododb`;
   let connection = null;
@@ -43,7 +42,6 @@ const ConnectionFactory = (function () {
                     id INTEGER PRIMARY KEY AUTOINCREMENT,\
                     name TEXT,\
                     status INTEGER DEFAULT 0);`;
-console.log(connection);
 
         // switch (dbVersion) {
         //   case `1`:

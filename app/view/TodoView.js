@@ -5,7 +5,7 @@ class TodoView extends BaseView {
     }
 
     template(todo) {
-        return `<li">
+        return `<li>
             <label class="d-flex align-items-center">
                 <input type="checkbox" value="${todo.id}"/>
                 <span>${todo.name}</span>
